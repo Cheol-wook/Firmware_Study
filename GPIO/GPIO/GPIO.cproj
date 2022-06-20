@@ -122,7 +122,13 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="interrupt2.c">
+    <Compile Include="lcd.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Lcd.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="LCD_test.c">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>
