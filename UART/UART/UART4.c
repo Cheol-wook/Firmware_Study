@@ -1,7 +1,7 @@
 ﻿/*
  * UART4.c
  *
- * Created: 2022-06-21 오후 3:06:55
+ * Created: 2022-06-21 오전 11:46:07
  *  Author: PKNU
  */ 
 #include <avr/io.h>
@@ -29,7 +29,7 @@ void puts(char *str){
 }
 
 int main(){
-   unsigned char text[] = "\nInput number to view the gugudan\n";
+   unsigned char text[] = "\r\nInput number to view the gugudan\r\n";
    unsigned char text2[] = "INPUT >> ";
    unsigned char gugu[50];
    
@@ -56,7 +56,7 @@ int main(){
       putch(input);
       
       for(int j = 1; j<=9; j++){
-         sprintf(gugu, "\n%d * %d = %d", inputi, j, inputi*j);
+         sprintf(gugu, "\r\n%d * %d = %d", inputi, j, inputi*j);
          
          puts(gugu);
       }
