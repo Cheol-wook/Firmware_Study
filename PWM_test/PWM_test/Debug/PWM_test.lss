@@ -1,0 +1,506 @@
+
+PWM_test.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000002  00800100  000002ca  0000033e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000002ca  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000340  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000370  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000060  00000000  00000000  000003b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000988  00000000  00000000  00000410  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000818  00000000  00000000  00000d98  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000046d  00000000  00000000  000015b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000144  00000000  00000000  00001a20  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000470  00000000  00000000  00001b64  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000028f  00000000  00000000  00001fd4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000050  00000000  00000000  00002263  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	80 c0       	rjmp	.+256    	; 0x106 <__vector_1>
+   6:	00 00       	nop
+   8:	9a c0       	rjmp	.+308    	; 0x13e <__vector_2>
+   a:	00 00       	nop
+   c:	b4 c0       	rjmp	.+360    	; 0x176 <__vector_3>
+   e:	00 00       	nop
+  10:	ce c0       	rjmp	.+412    	; 0x1ae <__vector_4>
+  12:	00 00       	nop
+  14:	e8 c0       	rjmp	.+464    	; 0x1e6 <__vector_5>
+  16:	00 00       	nop
+  18:	02 c1       	rjmp	.+516    	; 0x21e <__vector_6>
+  1a:	00 00       	nop
+  1c:	1c c1       	rjmp	.+568    	; 0x256 <__vector_7>
+  1e:	00 00       	nop
+  20:	36 c1       	rjmp	.+620    	; 0x28e <__vector_8>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ea ec       	ldi	r30, 0xCA	; 202
+  a0:	f2 e0       	ldi	r31, 0x02	; 2
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a2 30       	cpi	r26, 0x02	; 2
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	02 d0       	rcall	.+4      	; 0xb8 <main>
+  b4:	08 c1       	rjmp	.+528    	; 0x2c6 <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <main>:
+unsigned int DoReMi[8] = {523, 587, 659, 698, 783,880, 987, 1046};
+volatile unsigned char sound_flag = 1;
+
+int main(void)
+{
+	DDRE = 0x08;
+  b8:	88 e0       	ldi	r24, 0x08	; 8
+  ba:	82 b9       	out	0x02, r24	; 2
+	
+	TCCR3A = 0x00;		// WGM3(1:0) = “00”
+  bc:	10 92 8b 00 	sts	0x008B, r1	; 0x80008b <__TEXT_REGION_LENGTH__+0x7e008b>
+	TCCR3B = 0x19;		// WGM3(3:2) = “11” , CS3(2:0) = “001” 1
+  c0:	89 e1       	ldi	r24, 0x19	; 25
+  c2:	80 93 8a 00 	sts	0x008A, r24	; 0x80008a <__TEXT_REGION_LENGTH__+0x7e008a>
+	TCCR3C = 0x00;		// WGM3(3:0) = “1100”, CTC
+  c6:	10 92 8c 00 	sts	0x008C, r1	; 0x80008c <__TEXT_REGION_LENGTH__+0x7e008c>
+	
+	TCNT3 = 0x0000;			// 타이머3 카운터 초기화
+  ca:	10 92 89 00 	sts	0x0089, r1	; 0x800089 <__TEXT_REGION_LENGTH__+0x7e0089>
+  ce:	10 92 88 00 	sts	0x0088, r1	; 0x800088 <__TEXT_REGION_LENGTH__+0x7e0088>
+	
+	EICRA = 0xff;
+  d2:	8f ef       	ldi	r24, 0xFF	; 255
+  d4:	80 93 6a 00 	sts	0x006A, r24	; 0x80006a <__TEXT_REGION_LENGTH__+0x7e006a>
+	EICRB = 0xFF;		// 인터럽트 4, 5, 6, 7을 상승엣지에서 동작하도록 설정한다.
+  d8:	8a bf       	out	0x3a, r24	; 58
+	EIMSK = 0xFF;		 // 인터럽트 4, 5, 6, 7을 허용
+  da:	89 bf       	out	0x39, r24	; 57
+	
+	EIFR = 0xF0;		// 인터럽트 4, 5, 6, 7 플래그를 클리어
+  dc:	80 ef       	ldi	r24, 0xF0	; 240
+  de:	88 bf       	out	0x38, r24	; 56
+	
+	sei();
+  e0:	78 94       	sei
+	
+	while(1)
+	{
+		if(sound_flag)
+  e2:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+  e6:	88 23       	and	r24, r24
+  e8:	e1 f3       	breq	.-8      	; 0xe2 <main+0x2a>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  ea:	2f ef       	ldi	r18, 0xFF	; 255
+  ec:	8f e3       	ldi	r24, 0x3F	; 63
+  ee:	92 e0       	ldi	r25, 0x02	; 2
+  f0:	21 50       	subi	r18, 0x01	; 1
+  f2:	80 40       	sbci	r24, 0x00	; 0
+  f4:	90 40       	sbci	r25, 0x00	; 0
+  f6:	e1 f7       	brne	.-8      	; 0xf0 <main+0x38>
+  f8:	00 c0       	rjmp	.+0      	; 0xfa <main+0x42>
+  fa:	00 00       	nop
+		{
+			_delay_ms(100);			// 2초 지연
+			TCCR3A = 0x00;		// 부저 소리를 끈다.
+  fc:	10 92 8b 00 	sts	0x008B, r1	; 0x80008b <__TEXT_REGION_LENGTH__+0x7e008b>
+			sound_flag = 0;
+ 100:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 104:	ee cf       	rjmp	.-36     	; 0xe2 <main+0x2a>
+
+00000106 <__vector_1>:
+		}
+	}
+}
+
+SIGNAL(INT0_vect)
+{
+ 106:	1f 92       	push	r1
+ 108:	0f 92       	push	r0
+ 10a:	0f b6       	in	r0, 0x3f	; 63
+ 10c:	0f 92       	push	r0
+ 10e:	11 24       	eor	r1, r1
+ 110:	8f 93       	push	r24
+ 112:	9f 93       	push	r25
+	cli();
+ 114:	f8 94       	cli
+	
+	ICR3 = F_CPU/783.99/2;		// 도의 음향을 연주한다
+ 116:	8e e5       	ldi	r24, 0x5E	; 94
+ 118:	92 e1       	ldi	r25, 0x12	; 18
+ 11a:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <__TEXT_REGION_LENGTH__+0x7e0081>
+ 11e:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__TEXT_REGION_LENGTH__+0x7e0080>
+	TCCR3A = 0x40;					// PE4로 출력
+ 122:	80 e4       	ldi	r24, 0x40	; 64
+ 124:	80 93 8b 00 	sts	0x008B, r24	; 0x80008b <__TEXT_REGION_LENGTH__+0x7e008b>
+	
+	sound_flag = 1;					// 부저 음이 발생하도록 설정
+ 128:	81 e0       	ldi	r24, 0x01	; 1
+ 12a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	
+	sei();
+ 12e:	78 94       	sei
+}
+ 130:	9f 91       	pop	r25
+ 132:	8f 91       	pop	r24
+ 134:	0f 90       	pop	r0
+ 136:	0f be       	out	0x3f, r0	; 63
+ 138:	0f 90       	pop	r0
+ 13a:	1f 90       	pop	r1
+ 13c:	18 95       	reti
+
+0000013e <__vector_2>:
+
+SIGNAL(INT1_vect)
+{
+ 13e:	1f 92       	push	r1
+ 140:	0f 92       	push	r0
+ 142:	0f b6       	in	r0, 0x3f	; 63
+ 144:	0f 92       	push	r0
+ 146:	11 24       	eor	r1, r1
+ 148:	8f 93       	push	r24
+ 14a:	9f 93       	push	r25
+	cli();
+ 14c:	f8 94       	cli
+	
+	ICR3 = F_CPU/880.00/2;		// 도의 음향을 연주한다
+ 14e:	8d e5       	ldi	r24, 0x5D	; 93
+ 150:	90 e1       	ldi	r25, 0x10	; 16
+ 152:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <__TEXT_REGION_LENGTH__+0x7e0081>
+ 156:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__TEXT_REGION_LENGTH__+0x7e0080>
+	TCCR3A = 0x40;					// PE4로 출력
+ 15a:	80 e4       	ldi	r24, 0x40	; 64
+ 15c:	80 93 8b 00 	sts	0x008B, r24	; 0x80008b <__TEXT_REGION_LENGTH__+0x7e008b>
+	
+	sound_flag = 1;					// 부저 음이 발생하도록 설정
+ 160:	81 e0       	ldi	r24, 0x01	; 1
+ 162:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	
+	sei();
+ 166:	78 94       	sei
+}
+ 168:	9f 91       	pop	r25
+ 16a:	8f 91       	pop	r24
+ 16c:	0f 90       	pop	r0
+ 16e:	0f be       	out	0x3f, r0	; 63
+ 170:	0f 90       	pop	r0
+ 172:	1f 90       	pop	r1
+ 174:	18 95       	reti
+
+00000176 <__vector_3>:
+
+SIGNAL(INT2_vect)
+{
+ 176:	1f 92       	push	r1
+ 178:	0f 92       	push	r0
+ 17a:	0f b6       	in	r0, 0x3f	; 63
+ 17c:	0f 92       	push	r0
+ 17e:	11 24       	eor	r1, r1
+ 180:	8f 93       	push	r24
+ 182:	9f 93       	push	r25
+	cli();
+ 184:	f8 94       	cli
+	
+	ICR3 = F_CPU/990/2;		// 도의 음향을 연주한다
+ 186:	8b e8       	ldi	r24, 0x8B	; 139
+ 188:	9e e0       	ldi	r25, 0x0E	; 14
+ 18a:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <__TEXT_REGION_LENGTH__+0x7e0081>
+ 18e:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__TEXT_REGION_LENGTH__+0x7e0080>
+	TCCR3A = 0x40;					// PE4로 출력
+ 192:	80 e4       	ldi	r24, 0x40	; 64
+ 194:	80 93 8b 00 	sts	0x008B, r24	; 0x80008b <__TEXT_REGION_LENGTH__+0x7e008b>
+	
+	sound_flag = 1;					// 부저 음이 발생하도록 설정
+ 198:	81 e0       	ldi	r24, 0x01	; 1
+ 19a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	
+	sei();
+ 19e:	78 94       	sei
+}
+ 1a0:	9f 91       	pop	r25
+ 1a2:	8f 91       	pop	r24
+ 1a4:	0f 90       	pop	r0
+ 1a6:	0f be       	out	0x3f, r0	; 63
+ 1a8:	0f 90       	pop	r0
+ 1aa:	1f 90       	pop	r1
+ 1ac:	18 95       	reti
+
+000001ae <__vector_4>:
+
+SIGNAL(INT3_vect)
+{
+ 1ae:	1f 92       	push	r1
+ 1b0:	0f 92       	push	r0
+ 1b2:	0f b6       	in	r0, 0x3f	; 63
+ 1b4:	0f 92       	push	r0
+ 1b6:	11 24       	eor	r1, r1
+ 1b8:	8f 93       	push	r24
+ 1ba:	9f 93       	push	r25
+	cli();
+ 1bc:	f8 94       	cli
+	
+	ICR3 = F_CPU/1046/2;		// 도의 음향을 연주한다
+ 1be:	84 ec       	ldi	r24, 0xC4	; 196
+ 1c0:	9d e0       	ldi	r25, 0x0D	; 13
+ 1c2:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <__TEXT_REGION_LENGTH__+0x7e0081>
+ 1c6:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__TEXT_REGION_LENGTH__+0x7e0080>
+	TCCR3A = 0x40;					// PE4로 출력
+ 1ca:	80 e4       	ldi	r24, 0x40	; 64
+ 1cc:	80 93 8b 00 	sts	0x008B, r24	; 0x80008b <__TEXT_REGION_LENGTH__+0x7e008b>
+	
+	sound_flag = 1;					// 부저 음이 발생하도록 설정
+ 1d0:	81 e0       	ldi	r24, 0x01	; 1
+ 1d2:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	
+	sei();
+ 1d6:	78 94       	sei
+}
+ 1d8:	9f 91       	pop	r25
+ 1da:	8f 91       	pop	r24
+ 1dc:	0f 90       	pop	r0
+ 1de:	0f be       	out	0x3f, r0	; 63
+ 1e0:	0f 90       	pop	r0
+ 1e2:	1f 90       	pop	r1
+ 1e4:	18 95       	reti
+
+000001e6 <__vector_5>:
+
+SIGNAL(INT4_vect)
+{
+ 1e6:	1f 92       	push	r1
+ 1e8:	0f 92       	push	r0
+ 1ea:	0f b6       	in	r0, 0x3f	; 63
+ 1ec:	0f 92       	push	r0
+ 1ee:	11 24       	eor	r1, r1
+ 1f0:	8f 93       	push	r24
+ 1f2:	9f 93       	push	r25
+	cli();
+ 1f4:	f8 94       	cli
+	
+	ICR3 = F_CPU/523.25/2;		// 도의 음향을 연주한다
+ 1f6:	85 e8       	ldi	r24, 0x85	; 133
+ 1f8:	9b e1       	ldi	r25, 0x1B	; 27
+ 1fa:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <__TEXT_REGION_LENGTH__+0x7e0081>
+ 1fe:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__TEXT_REGION_LENGTH__+0x7e0080>
+	TCCR3A = 0x40;					// PE4로 출력
+ 202:	80 e4       	ldi	r24, 0x40	; 64
+ 204:	80 93 8b 00 	sts	0x008B, r24	; 0x80008b <__TEXT_REGION_LENGTH__+0x7e008b>
+	
+	sound_flag = 1;					// 부저 음이 발생하도록 설정
+ 208:	81 e0       	ldi	r24, 0x01	; 1
+ 20a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	
+	sei();
+ 20e:	78 94       	sei
+}
+ 210:	9f 91       	pop	r25
+ 212:	8f 91       	pop	r24
+ 214:	0f 90       	pop	r0
+ 216:	0f be       	out	0x3f, r0	; 63
+ 218:	0f 90       	pop	r0
+ 21a:	1f 90       	pop	r1
+ 21c:	18 95       	reti
+
+0000021e <__vector_6>:
+
+SIGNAL(INT5_vect)
+{
+ 21e:	1f 92       	push	r1
+ 220:	0f 92       	push	r0
+ 222:	0f b6       	in	r0, 0x3f	; 63
+ 224:	0f 92       	push	r0
+ 226:	11 24       	eor	r1, r1
+ 228:	8f 93       	push	r24
+ 22a:	9f 93       	push	r25
+	cli();
+ 22c:	f8 94       	cli
+	
+	ICR3 = F_CPU/587.77/2;		// 래의 음향을 연주한다
+ 22e:	8f e7       	ldi	r24, 0x7F	; 127
+ 230:	98 e1       	ldi	r25, 0x18	; 24
+ 232:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <__TEXT_REGION_LENGTH__+0x7e0081>
+ 236:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__TEXT_REGION_LENGTH__+0x7e0080>
+	TCCR3A = 0x40;					// PE4로 출력
+ 23a:	80 e4       	ldi	r24, 0x40	; 64
+ 23c:	80 93 8b 00 	sts	0x008B, r24	; 0x80008b <__TEXT_REGION_LENGTH__+0x7e008b>
+	
+	sound_flag = 1;					// 부저 음이 발생하도록 설정
+ 240:	81 e0       	ldi	r24, 0x01	; 1
+ 242:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	sei();
+ 246:	78 94       	sei
+}
+ 248:	9f 91       	pop	r25
+ 24a:	8f 91       	pop	r24
+ 24c:	0f 90       	pop	r0
+ 24e:	0f be       	out	0x3f, r0	; 63
+ 250:	0f 90       	pop	r0
+ 252:	1f 90       	pop	r1
+ 254:	18 95       	reti
+
+00000256 <__vector_7>:
+
+SIGNAL(INT6_vect)
+{
+ 256:	1f 92       	push	r1
+ 258:	0f 92       	push	r0
+ 25a:	0f b6       	in	r0, 0x3f	; 63
+ 25c:	0f 92       	push	r0
+ 25e:	11 24       	eor	r1, r1
+ 260:	8f 93       	push	r24
+ 262:	9f 93       	push	r25
+	cli();
+ 264:	f8 94       	cli
+	
+	ICR3 = 7372800/659/2;		// 미의 음향을 연주한다
+ 266:	89 ed       	ldi	r24, 0xD9	; 217
+ 268:	95 e1       	ldi	r25, 0x15	; 21
+ 26a:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <__TEXT_REGION_LENGTH__+0x7e0081>
+ 26e:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__TEXT_REGION_LENGTH__+0x7e0080>
+	TCCR3A = 0x40;					// PE4로 출력
+ 272:	80 e4       	ldi	r24, 0x40	; 64
+ 274:	80 93 8b 00 	sts	0x008B, r24	; 0x80008b <__TEXT_REGION_LENGTH__+0x7e008b>
+	
+	sound_flag = 1;					// 부저 음이 발생하도록 설정
+ 278:	81 e0       	ldi	r24, 0x01	; 1
+ 27a:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	sei();
+ 27e:	78 94       	sei
+}
+ 280:	9f 91       	pop	r25
+ 282:	8f 91       	pop	r24
+ 284:	0f 90       	pop	r0
+ 286:	0f be       	out	0x3f, r0	; 63
+ 288:	0f 90       	pop	r0
+ 28a:	1f 90       	pop	r1
+ 28c:	18 95       	reti
+
+0000028e <__vector_8>:
+
+SIGNAL(INT7_vect)
+{
+ 28e:	1f 92       	push	r1
+ 290:	0f 92       	push	r0
+ 292:	0f b6       	in	r0, 0x3f	; 63
+ 294:	0f 92       	push	r0
+ 296:	11 24       	eor	r1, r1
+ 298:	8f 93       	push	r24
+ 29a:	9f 93       	push	r25
+	cli();
+ 29c:	f8 94       	cli
+	
+	ICR3 = 7372800/698/2;		// 파의 음향을 연주한다
+ 29e:	81 ea       	ldi	r24, 0xA1	; 161
+ 2a0:	94 e1       	ldi	r25, 0x14	; 20
+ 2a2:	90 93 81 00 	sts	0x0081, r25	; 0x800081 <__TEXT_REGION_LENGTH__+0x7e0081>
+ 2a6:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__TEXT_REGION_LENGTH__+0x7e0080>
+	TCCR3A = 0x40;					// PE4로 출력
+ 2aa:	80 e4       	ldi	r24, 0x40	; 64
+ 2ac:	80 93 8b 00 	sts	0x008B, r24	; 0x80008b <__TEXT_REGION_LENGTH__+0x7e008b>
+	
+	sound_flag = 1;					// 부저 음이 발생하도록 설정
+ 2b0:	81 e0       	ldi	r24, 0x01	; 1
+ 2b2:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+	sei();
+ 2b6:	78 94       	sei
+ 2b8:	9f 91       	pop	r25
+ 2ba:	8f 91       	pop	r24
+ 2bc:	0f 90       	pop	r0
+ 2be:	0f be       	out	0x3f, r0	; 63
+ 2c0:	0f 90       	pop	r0
+ 2c2:	1f 90       	pop	r1
+ 2c4:	18 95       	reti
+
+000002c6 <_exit>:
+ 2c6:	f8 94       	cli
+
+000002c8 <__stop_program>:
+ 2c8:	ff cf       	rjmp	.-2      	; 0x2c8 <__stop_program>
